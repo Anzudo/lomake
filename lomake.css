@@ -28,7 +28,6 @@ body {
 h1, h2, h3, h4 {
     font-size: 80px;
     font-family: 'Khand', sans-serif;
-    color: #fffc4d;
     font-weight: 700;
 }
 
@@ -39,7 +38,7 @@ h1 {
     z-index: 1;
 }
 
-h1 .fas {
+h1 .fa, h1 .fas, h1 .far {
     font-size: 180px;
     margin-bottom: 20px;
     margin-top: 50px;
@@ -48,7 +47,7 @@ h1 .fas {
     transition: all 600ms;
 }
 
-h1 .fas:hover {
+h1 .fa:hover, h1 .fas:hover, h1 .far:hover {
     transform: rotate(5deg);
 }
 
@@ -88,13 +87,33 @@ p {
     position: relative;
 }
 
-.kettu {
+.container {
     position: relative;	
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.28);
     padding-bottom: 70px;
     margin-top: 8vh;
     border-radius: 10px;
+}
+
+/*.ilkea, .sopo, .neutraali {
+    display: none;
+}*/
+
+.ilkea h1 {
+    color: #fffc4d;
+}
+
+.sopo h1 {
+    color: #e751e0;
+}
+
+.neutraali h1 {
+    color: #7c7c6e;
+}
+
+.active {
+    display: block;
 }
 
 #stars {
