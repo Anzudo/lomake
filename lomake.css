@@ -26,25 +26,28 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-size: 80px;
     font-family: 'Khand', sans-serif;
     font-weight: 700;
+    margin-left: 8px;
+    
 }
 
 h1 {
     margin-bottom: 25px;
     letter-spacing: 15px;
+    font-size: 40px;
     position: relative;
     z-index: 1;
+    text-shadow: 8px 10px 8px rgba(0, 0, 0, 0.55);
 }
 
 h1 .fa, h1 .fas, h1 .far {
-    font-size: 180px;
     margin-bottom: 20px;
-    margin-top: 50px;
-    margin-right: 20px;
-    vertical-align: -40px;
+    margin-top: 20px;
     transition: all 600ms;
+    display: block;
+    font-size: 80px;
+    
 }
 
 h1 .fa:hover, h1 .fas:hover, h1 .far:hover {
@@ -62,13 +65,12 @@ img {
 
 p {
     margin-bottom: 10px;
-    font-size: 35px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
 .polaroid {
     background-color: #fff;
-    max-width: 65%;
     margin: auto;
     padding: 15px;
     box-shadow: 10px 10px 37px rgba(0, 0, 0, 0.55);
@@ -92,8 +94,9 @@ p {
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.28);
     padding-bottom: 70px;
-    margin-top: 8vh;
+    margin-top: 20px;
     border-radius: 10px;
+    overflow: auto;
 }
 
 /*.ilkea, .sopo, .neutraali {
@@ -144,4 +147,31 @@ form input {
     padding: 5px 5px;
     width: 100%;
     border: 2px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    h1, h2, h3, h4 {
+        font-size: 80px;
+        margin-left: auto;
+    }
+    h1 .fa, h1 .fas, h1 .far {
+        font-size: 180px;
+        vertical-align: -40px;
+        display: inline;
+        margin-right: 20px;
+        margin-top: 40px;
+        display: inline-block;
+    }
+    .polaroid {
+    max-width: 65%;
+    }
+
+    p {
+        font-size: 35px;
+    }
+    .container {
+        margin-top: 60px;
+        margin-top: 8vh;
+    }
+    
 }
