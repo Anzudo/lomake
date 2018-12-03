@@ -38,7 +38,7 @@ h1 {
     font-size: 40px;
     position: relative;
     z-index: 1;
-    text-shadow: 8px 10px 8px rgba(0, 0, 0, 0.55);
+    /*text-shadow: 8px 10px 8px rgba(0, 0, 0, 0.55);*/
 }
 
 h1 .fa, h1 .fas, h1 .far {
